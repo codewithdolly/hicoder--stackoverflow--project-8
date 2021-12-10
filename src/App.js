@@ -1,5 +1,6 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        <button className='btn btn-info'>Hello</button>
       </header>
     </div>
   );
