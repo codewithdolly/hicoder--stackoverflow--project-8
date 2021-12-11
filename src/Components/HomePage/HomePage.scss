@@ -1,0 +1,37 @@
+$OrangeColor: rgb(242, 116, 13);
+
+.homePage {
+  .homePage--innerDiv {
+    margin: 3%;
+    padding: 3%;
+    border-radius: 10px;
+    .homePage--innerDiv--box {
+      display: flex;
+      margin: 0 10%;
+        align-content: center;
+        align-items: center;
+      .homePage--innerDiv--box--find {
+        background-color: rgb(254, 227, 205);
+        color: black;
+        text-align: center;
+        width: 42%;
+        padding: 1rem 5rem;
+        border-radius: 10px;
+        margin: 3rem;
+
+        .homePage--innerDiv--box--find--btn {
+          color: white;
+          background-color: $OrangeColor;
+        }
+      }
+      .homePage--innerDiv--box--secure {
+        background-color: rgb(205, 233, 254);
+        color: black;
+        text-align: center;
+        width: 40%;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+      }
+    }
+  }
+}
