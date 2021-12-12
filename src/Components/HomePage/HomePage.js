@@ -46,7 +46,7 @@ const HomePage = () => {
               </button>
             </div>
           </div>
-          <h1>Every has a <b>mobile developerg</b> tab open to Stack Overflow</h1>
+          <h1>Every has a data <span>Softwere Developer</span> tab open to Stack Overflow</h1>
         </div>
       </div>
     </>
