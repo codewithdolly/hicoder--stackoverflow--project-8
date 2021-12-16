@@ -1,9 +1,10 @@
-$OrangeColor: rgb(242, 116, 13);
+@import"../styles/colors";
 
 .homePage {
   .homePage--innerDiv {
     margin: 3%;
-    padding: 3%;
+    padding: 7%;
+    padding-bottom: 15%;
     border-radius: 10px;
     .homePage--innerDiv--box {
       display: flex;
@@ -21,7 +22,7 @@ $OrangeColor: rgb(242, 116, 13);
 
         .homePage--innerDiv--box--find--btn {
           color: white;
-          background-color: $OrangeColor;
+          background-color: $orangeColor;
         }
       }
       .homePage--innerDiv--box--secure {
@@ -32,6 +33,28 @@ $OrangeColor: rgb(242, 116, 13);
         padding: 1rem 2rem;
         border-radius: 10px;
       }
+    }
+    .homePage--innerDiv--header{
+      font-family: 'Roboto Slab Bold',serif;
+      font-size: 50px;
+      font-weight: 700;
+      text-align: center;
+      width: 60%;
+      margin: auto;
+
+      span{
+        color: $orangeColor;
+      }
+    }
+    .homePage--innerDiv--plain{
+      // margin-left: 20rem;
+      background-color: silver;
+      padding: 5px;
+      border-radius: 20px;
+      width: 10%;
+      margin: auto;
+      margin-top: 5rem;
+
     }
   }
 }

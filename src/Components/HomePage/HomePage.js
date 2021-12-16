@@ -6,7 +6,7 @@ import search from "../Images/search.png";
 const HomePage = () => {
   return (
     <>
-      <div className="homePage">
+      <div className="homePage fixed">
         <div className="homePage--innerDiv bg-dark text-light">
           <div className="homePage--innerDiv--box align-middle">
             <div className="homePage--innerDiv--box--find">
@@ -46,7 +46,13 @@ const HomePage = () => {
               </button>
             </div>
           </div>
-          <h1>Every has a data <span>Softwere Developer</span> tab open to Stack Overflow</h1>
+          <h1 className="homePage--innerDiv--header">Every has a data <span>Data Developer</span> tab open to Stack Overflow</h1>
+          <div class="homePage--innerDiv--plain" ></div>
+          <div>
+            <h2>100+ million</h2>
+            <p>monthly visitors to Stack</p>
+            <p>Overflow & Stack Exchange</p>
+          </div>
         </div>
       </div>
     </>
