@@ -2,6 +2,7 @@ import React from "react";
 import "./HomePage.scss";
 import secure from "../Images/secure.png";
 import search from "../Images/search.png";
+import PublicPlatform from "./PublicPlatform";
 
 const HomePage = () => {
   return (
@@ -46,17 +47,52 @@ const HomePage = () => {
               </button>
             </div>
           </div>
-          <h1 className="homePage--innerDiv--header">Every has a data <span>Data Developer</span> tab open to Stack Overflow</h1>
-          <div class="homePage--innerDiv--plain" ></div>
-          <div>
-            <h2>100+ million</h2>
-            <p>monthly visitors to Stack</p>
-            <p>Overflow & Stack Exchange</p>
+          <h1 className="homePage--innerDiv--header">
+            Every has a data <span> Developer</span> tab open to Stack
+            Overflow
+          </h1>
+          <div class="homePage--innerDiv--plain"></div>
+          <div className="homePage--innerDiv--reach">
+          {details.map((det) => {
+            return (
+              <>
+                <div>
+                  <h3>{det.reach}</h3>
+                  <p>{det.detail1}</p>
+                  <p>{det.detail2}</p>
+                  </div>
+              </>
+            );
+          })}
           </div>
         </div>
+        <PublicPlatform />
       </div>
     </>
   );
 };
 
 export default HomePage;
+
+const details = [
+  {
+    reach: "100+ million",
+    detail1: "monthly visitors to Stack",
+    detail2: "Overflow & Stack Exchange",
+  },
+  {
+    reach: "100+ million",
+    detail1: "monthly visitors to Stack",
+    detail2: "Overflow & Stack Exchange",
+  },
+  {
+    reach: "100+ million",
+    detail1: "monthly visitors to Stack",
+    detail2: "Overflow & Stack Exchange",
+  },
+  {
+    reach: "100+ million",
+    detail1: "monthly visitors to Stack",
+    detail2: "Overflow & Stack Exchange",
+  },
+];

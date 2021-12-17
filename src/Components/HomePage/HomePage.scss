@@ -3,8 +3,8 @@
 .homePage {
   .homePage--innerDiv {
     margin: 3%;
-    padding: 7%;
-    padding-bottom: 15%;
+    padding: 3%;
+    padding-bottom: 20%;
     border-radius: 10px;
     .homePage--innerDiv--box {
       display: flex;
@@ -54,7 +54,17 @@
       width: 10%;
       margin: auto;
       margin-top: 5rem;
-
+      margin-bottom: 5rem;
+    }
+    .homePage--innerDiv--reach{
+      width: 80%;
+     display: flex;
+     grid-gap: 4rem;
+     margin: auto;
+     line-height: 10px;
+     p{
+       color: rgba(255, 255, 255, 0.829);
+     }
     }
   }
 }
