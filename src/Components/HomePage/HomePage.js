@@ -2,13 +2,24 @@ import React from "react";
 import "./HomePage.scss";
 import secure from "../Images/secure.png";
 import search from "../Images/search.png";
-import PublicPlatform from "./PublicPlatform";
+import LineImg from "../Images/line.png";
+import blue from "../Images/blue.png";
+import yellow from "../Images/yellow.png";
+import PublicPlatform from "./PublicPlatform"
+import Brand from "./Brand";
+import Turms from "./Turms";
 
 const HomePage = () => {
   return (
     <>
       <div className="homePage fixed">
         <div className="homePage--innerDiv bg-dark text-light">
+        <img src={yellow} alt="squre" className="homePage--innerDiv--sqere" />
+        <img src={LineImg} alt="Line" className="homePage--innerDiv--lineimg1" />
+        <div className="homePage--innerDiv--lineimg2" >
+        <img src={LineImg} alt="line" />
+        <img src={blue} alt="squre" />
+        </div>
           <div className="homePage--innerDiv--box align-middle">
             <div className="homePage--innerDiv--box--find">
               <img src={search} alt="search" />
@@ -67,7 +78,10 @@ const HomePage = () => {
           </div>
         </div>
         <PublicPlatform />
+        <Brand />
+          <Turms />
       </div>
+
     </>
   );
 };
@@ -81,18 +95,18 @@ const details = [
     detail2: "Overflow & Stack Exchange",
   },
   {
-    reach: "100+ million",
-    detail1: "monthly visitors to Stack",
-    detail2: "Overflow & Stack Exchange",
+    reach: "45.1+ billion",
+    detail1: "Times a developer got help",
+    detail2: "since 2008",
   },
   {
-    reach: "100+ million",
-    detail1: "monthly visitors to Stack",
-    detail2: "Overflow & Stack Exchange",
+    reach: "179% ROI",
+    detail1: "from companies using Stack",
+    detail2: "Overflow for Teams",
   },
   {
-    reach: "100+ million",
-    detail1: "monthly visitors to Stack",
-    detail2: "Overflow & Stack Exchange",
+    reach: "5,000+",
+    detail1: "Stack Overflow for Teams",
+    detail2: "instances active every day",
   },
 ];

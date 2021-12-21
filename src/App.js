@@ -68,7 +68,7 @@ const App = () => {
           </form>
         </div>
       </nav>
-      <HomePage />
+<HomePage />
     </>
   );
 };

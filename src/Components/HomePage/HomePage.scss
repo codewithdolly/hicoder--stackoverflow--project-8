@@ -4,9 +4,27 @@
   .homePage--innerDiv {
     margin: 3%;
     padding: 3%;
-    padding-bottom: 20%;
     border-radius: 10px;
+    .homePage--innerDiv--sqere{
+      position: absolute;
+      left: 3rem;
+      top: 8rem;
+      z-index: 0;
+    }
+    .homePage--innerDiv--lineimg1{
+      position: absolute;
+      left: 5rem;
+      top: 23rem;
+      z-index: 0;
+    }
+    .homePage--innerDiv--lineimg2{
+      position: absolute;
+      right: 3rem;
+      top: 15;
+      z-index: 0;
+    }
     .homePage--innerDiv--box {
+     
       display: flex;
       margin: 0 10%;
         align-content: center;
@@ -47,7 +65,6 @@
       }
     }
     .homePage--innerDiv--plain{
-      // margin-left: 20rem;
       background-color: silver;
       padding: 5px;
       border-radius: 20px;
@@ -62,6 +79,8 @@
      grid-gap: 4rem;
      margin: auto;
      line-height: 10px;
+     text-align: center;
+    padding-bottom: 20%;
      p{
        color: rgba(255, 255, 255, 0.829);
      }
