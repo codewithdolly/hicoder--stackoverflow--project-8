@@ -24,10 +24,13 @@
   .turms--context{
       background-image: linear-gradient(rgb(35, 38, 41) 0%, rgb(82, 89, 96) 130%);
       margin: 0 3%;
+      padding-top: 20rem;
+      padding-bottom: 5rem;
       border-radius: 5px;
       .turms--context--img2{
-          position: relative;
-          bottom: 30rem;
+          position: absolute;
+          top: 140rem;
+          right: 30rem;
           width: 600px;
           height: 650px;
         @extend .img;

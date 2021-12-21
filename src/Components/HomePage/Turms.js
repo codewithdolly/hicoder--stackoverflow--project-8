@@ -28,6 +28,7 @@ const Turms = () => {
             <img src={img2} alt=""className="turms--context--img2"/>
           <div>  <img src={logo3} alt="" />
             <h3 className="text-light">Capture your company’s knowledge and context in a discoverable format to <span style={{color:" rgb(242, 116, 13)"}}>unblock your team</span></h3></div>
+            <button className="btn btn-primary">Take a tour of Teams</button>
         </div>
       </div>
     </>
