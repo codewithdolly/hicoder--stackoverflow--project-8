@@ -1,12 +1,15 @@
 import "./App.scss";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
+import { BrowserRouter as Router, Link, Switch, Routes } from "react-router-dom";
 import logo from "./Components/Images/logo1.png";
-import { HomePage } from "./Components";
+import { HomePage, Footer } from "./Components";
+
 
 const App = () => {
   return (
     <>
+    <Router>
       <nav class="app navbar navbar-expand-lg navbar-light bg-light px-5">
         <span class="navbar-toggler-icon mx-2 ml-5"></span>
 
@@ -69,6 +72,8 @@ const App = () => {
         </div>
       </nav>
 <HomePage />
+<Footer />
+</Router>
     </>
   );
 };

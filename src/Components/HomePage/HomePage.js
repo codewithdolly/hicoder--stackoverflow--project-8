@@ -79,7 +79,7 @@ const HomePage = () => {
         </div>
         <PublicPlatform />
         <Brand />
-          <Turms />
+        <Turms />
       </div>
 
     </>

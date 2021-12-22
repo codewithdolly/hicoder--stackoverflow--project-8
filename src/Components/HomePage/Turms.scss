@@ -22,6 +22,7 @@
     width: 80px;
   }
   .turms--context{
+      font-family: auto;
       background-image: linear-gradient(rgb(35, 38, 41) 0%, rgb(82, 89, 96) 130%);
       margin: 0 3%;
       padding-top: 20rem;
@@ -29,12 +30,25 @@
       border-radius: 5px;
       .turms--context--img2{
           position: absolute;
-          top: 140rem;
+          top: 141rem;
           right: 30rem;
           width: 600px;
-          height: 650px;
+          height: 670px;
         @extend .img;
       }
   }
+}
+
+.icon{
+    color: $blueColor;
+    font-size: 5rem;
+    background-color: $background;
+    padding:20px 23px;
+    border-radius: 50%;
+    border: 1px solid $background;
+    &:hover{
+        border: 1px solid $blueColor; 
+        box-shadow: 1px 1px 20px rgba(0, 0, 255, 0.233);
+    }
 }
 
