@@ -8,6 +8,7 @@ import img2 from "../Images/img2.png";
 import img3 from "../Images/img3.png";
 import logo3 from "../Images/logo3.png";
 import Billing from "./Billing";
+import ToolIntegrates from "./ToolIntegrates";
 
 const Turms = () => {
   return (
@@ -84,7 +85,9 @@ const Turms = () => {
           </div>
           <img src={Orange} alt="squre" className="float-right mb-5 pb-4"  />
           <Billing />
+          <ToolIntegrates />
         </div>
+        
       </div>
     </>
   );

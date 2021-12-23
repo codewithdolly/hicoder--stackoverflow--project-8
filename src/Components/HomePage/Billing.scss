@@ -1,0 +1,21 @@
+@import "../styles/colors";
+.billing{
+    .billing--info{
+        margin: 4rem 7%;
+        .billing--info--content{
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 15px 10px;
+            margin-left: 20px;
+            width: 30%;
+            h4{
+                color: $blueColor;
+            }
+            button{
+                color: rgb(55, 159, 239);
+                border: 1px solid rgb(55, 159, 239);
+
+            }
+        }
+    }
+}

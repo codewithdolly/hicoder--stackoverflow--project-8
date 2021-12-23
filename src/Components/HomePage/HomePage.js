@@ -8,6 +8,7 @@ import yellow from "../Images/yellow.png";
 import PublicPlatform from "./PublicPlatform"
 import Brand from "./Brand";
 import Turms from "./Turms";
+import ToolIntegrates from "./ToolIntegrates";
 
 const HomePage = () => {
   return (
