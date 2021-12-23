@@ -9,6 +9,7 @@ import img3 from "../Images/img3.png";
 import logo3 from "../Images/logo3.png";
 import Billing from "./Billing";
 import ToolIntegrates from "./ToolIntegrates";
+import Management from "./Management";
 
 const Turms = () => {
   return (
@@ -86,6 +87,7 @@ const Turms = () => {
           <img src={Orange} alt="squre" className="float-right mb-5 pb-4"  />
           <Billing />
           <ToolIntegrates />
+          <Management />
         </div>
         
       </div>
