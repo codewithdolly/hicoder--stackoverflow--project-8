@@ -7,7 +7,7 @@ import blue from "../Images/blue.png";
 import yellow from "../Images/yellow.png";
 import PublicPlatform from "./PublicPlatform"
 import Brand from "./Brand";
-import Turms from "./Turms";
+import TurmsAndCondition from "./TurmsAndCondition"
 import AdditionalProducts from "./AdditionalProducts"
 import Management from "./Management";
 
@@ -81,7 +81,7 @@ const HomePage = () => {
         </div>
         <PublicPlatform />
         <Brand />
-        <Turms />
+       <TurmsAndCondition />
         <Management />
       </div>
 <AdditionalProducts />

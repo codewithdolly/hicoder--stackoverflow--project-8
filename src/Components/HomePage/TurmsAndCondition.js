@@ -1,5 +1,5 @@
 import React from "react";
-import "./Turms.scss";
+import "./TurmsAndCondition.scss";
 import blue from "../Images/blue.png";
 import yellow from "../Images/yellow.png";
 import Orange from "../Images/orange.png";
@@ -10,7 +10,7 @@ import logo3 from "../Images/logo3.png";
 import Billing from "./Billing";
 import ToolIntegrates from "./ToolIntegrates";
 
-const Turms = () => {
+const TurmsAndCondition = () => {
   return (
     <>
       <div className="turms">
@@ -93,7 +93,7 @@ const Turms = () => {
   );
 };
 
-export default Turms;
+export default TurmsAndCondition;
 
 const productivity = [
   {

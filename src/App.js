@@ -1,9 +1,9 @@
 import "./App.scss";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import logo from "./Components/Images/logo1.png";
-import { HomePage, Footer, About } from "./Components";
+import { HomePage, Footer, About, Turms, Products } from "./Components";
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <nav class="app navbar navbar-expand-lg navbar-light bg-light px-5">
           <span class="navbar-toggler-icon mx-2 ml-5"></span>
 
-          <Link class="navbar-brand">
+          <Link to="/" class="navbar-brand">
             <img src={logo} alt="" width="160px" />
           </Link>
           <button
@@ -35,10 +35,12 @@ const App = () => {
                 </Link>
               </li>
               <li to="/product" class="nav-item mr-4">
-                <Link class="nav-link">Products</Link>
+                <Link to="/product" class="nav-link">
+                  Products
+                </Link>
               </li>
               <li class="nav-item">
-                <Link to="/turn" class="nav-link">
+                <Link to="/turm" class="nav-link">
                   For Turms
                 </Link>
               </li>
@@ -68,20 +70,12 @@ const App = () => {
             </form>
           </div>
         </nav>
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/product">
-            <About />
-          </Route>
-          <Route path="/turn">
-            <About />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route index element={<HomePage />} />
+          <Route path="about" element={<About />} />
+          <Route path="product" element={<Products />} />
+          <Route path="turm" element={<Turms />} />
+        </Routes>
 
         {/* <HomePage /> */}
         {/* <Footer /> */}
