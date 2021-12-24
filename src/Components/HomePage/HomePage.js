@@ -8,7 +8,8 @@ import yellow from "../Images/yellow.png";
 import PublicPlatform from "./PublicPlatform"
 import Brand from "./Brand";
 import Turms from "./Turms";
-import ToolIntegrates from "./ToolIntegrates";
+import AdditionalProducts from "./AdditionalProducts"
+import Management from "./Management";
 
 const HomePage = () => {
   return (
@@ -81,8 +82,9 @@ const HomePage = () => {
         <PublicPlatform />
         <Brand />
         <Turms />
+        <Management />
       </div>
-
+<AdditionalProducts />
     </>
   );
 };

@@ -3,6 +3,22 @@
 .management{
     .management--miniCard{
         position: relative;
-        top: 120px;
+        bottom: 15rem;
     }
+}
+.teams{
+   margin-top: -10rem;
+   .teams--card{
+       background-color: menu;
+       text-align: justify;
+       width: 30rem;
+   }
+   .teams--deg{
+    line-height: 10px;
+    .teams--deg--name{
+       font-size: 18px;
+       font-weight: 600;
+       text-align: left;
+    }
+   }
 }
