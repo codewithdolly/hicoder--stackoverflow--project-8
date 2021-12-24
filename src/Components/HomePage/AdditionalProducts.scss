@@ -1,8 +1,33 @@
+.additionalProducts {
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+  font-family: auto;
+  .additionalProducts--centerPart {
+    .additionalProducts--centerPart--card {
+      margin: auto;
+      padding: 2rem 10rem;
+      display: flex !important;
+      text-align: center;
+      align-items: center;
+    }
+  }
+  .orangeImg {
+    width: 100px;
+    position: relative;
+    right: 5px;
+    bottom: 3rem;
+    z-index: -1;
+  }
 
-
-.additionalProducts{
-    margin: 10rem 0;
-    font-family: auto;
-    justify-content: space-between;
-    // display: inline-block;
+  .blueImg {
+    position: relative;
+    top: 30rem;
+    right: 1rem;
+  }
+  .yellowImg {
+      width: 200px;
+    float: right;
+    margin-top: 13rem;
+    margin-right: 1rem;
+  }
 }

@@ -20,34 +20,34 @@ const Footer = () => {
           STACK OVERFLOW
           </h6>
           <p>
-            <a to= "https://drive.google.com/drive/my-drive">Questions</a>
+            <Link to= "https://drive.google.com/drive/my-drive">Questions</Link>
           </p>
           <p>
-            <a href="#!" class="text-reset">Jobs</a>
+            <Link class="text-reset">Jobs</Link>
           </p>
           <p>
-            <a href="#!" class="text-reset">Developer Jobs Directory</a>
+            <Link class="text-reset">Developer Jobs Directory</Link>
           </p>
           <p>
-            <a href="#!" class="text-reset">Salary Calculator
-</a>
+            <Link class="text-reset">Salary Calculator
+</Link>
           </p>
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
+            Useful Links
           </h6>
           <p>
-            <a href="#!" class="text-reset">Pricing</a>
+            <Link class="text-reset">Pricing</Link>
           </p>
           <p>
-            <a href="#!" class="text-reset">Settings</a>
+            <Link class="text-reset">Settings</Link>
           </p>
           <p>
-            <a href="#!" class="text-reset">Orders</a>
+            <Link class="text-reset">Orders</Link>
           </p>
           <p>
-            <a href="#!" class="text-reset">Help</a>
+            <Link class="text-reset">Help</Link>
           </p>
         </div>
 
@@ -57,7 +57,7 @@ const Footer = () => {
 
   <div class="text-center p-4 bg-dark">
     © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">created by Dolly</a>
+    <Link class="text-reset fw-bold" href="https://mdbootstrap.com/">created by Dolly</Link>
   </div>
 </footer>
         </
