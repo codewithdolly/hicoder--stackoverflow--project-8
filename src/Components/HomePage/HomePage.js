@@ -5,23 +5,29 @@ import search from "../Images/search.png";
 import LineImg from "../Images/line.png";
 import blue from "../Images/blue.png";
 import yellow from "../Images/yellow.png";
-import PublicPlatform from "./PublicPlatform"
+import PublicPlatform from "./PublicPlatform";
 import Brand from "./Brand";
-import TurmsAndCondition from "./TurmsAndCondition"
-import AdditionalProducts from "./AdditionalProducts"
+import TurmsAndCondition from "./TurmsAndCondition";
+import AdditionalProducts from "./AdditionalProducts";
 import Management from "./Management";
+import { Footer } from "..";
+
 
 const HomePage = () => {
   return (
     <>
       <div className="homePage fixed">
         <div className="homePage--innerDiv bg-dark text-light">
-        <img src={yellow} alt="squre" className="homePage--innerDiv--sqere" />
-        <img src={LineImg} alt="Line" className="homePage--innerDiv--lineimg1" />
-        <div className="homePage--innerDiv--lineimg2" >
-        <img src={LineImg} alt="line" />
-        <img src={blue} alt="squre" />
-        </div>
+          <img src={yellow} alt="squre" className="homePage--innerDiv--sqere" />
+          <img
+            src={LineImg}
+            alt="Line"
+            className="homePage--innerDiv--lineimg1"
+          />
+          <div className="homePage--innerDiv--lineimg2">
+            <img src={LineImg} alt="line" />
+            <img src={blue} alt="squre" />
+          </div>
           <div className="homePage--innerDiv--box align-middle">
             <div className="homePage--innerDiv--box--find">
               <img src={search} alt="search" />
@@ -61,30 +67,30 @@ const HomePage = () => {
             </div>
           </div>
           <h1 className="homePage--innerDiv--header">
-            Every has a data <span> Developer</span> tab open to Stack
-            Overflow
+            Every has a data <span> Developer</span> tab open to Stack Overflow
           </h1>
           <div class="homePage--innerDiv--plain"></div>
           <div className="homePage--innerDiv--reach">
-          {details.map((det) => {
-            return (
-              <>
-                <div>
-                  <h3>{det.reach}</h3>
-                  <p>{det.detail1}</p>
-                  <p>{det.detail2}</p>
+            {details.map((det) => {
+              return (
+                <>
+                  <div>
+                    <h3>{det.reach}</h3>
+                    <p>{det.detail1}</p>
+                    <p>{det.detail2}</p>
                   </div>
-              </>
-            );
-          })}
+                </>
+              );
+            })}
           </div>
         </div>
         <PublicPlatform />
         <Brand />
-       <TurmsAndCondition />
+        <TurmsAndCondition />
         <Management />
       </div>
-<AdditionalProducts />
+      <AdditionalProducts />
+      <Footer />
     </>
   );
 };

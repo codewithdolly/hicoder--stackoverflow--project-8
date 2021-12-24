@@ -75,10 +75,12 @@ const App = () => {
           <Route path="about" element={<About />} />
           <Route path="product" element={<Products />} />
           <Route path="turm" element={<Turms />} />
+          <Route path="footer" element={<Footer />}>
+          <Route path=":questions" element={<Footer />} />
+          </Route>
+          <Route path="" element={<p>Please select something</p>} />
         </Routes>
 
-        {/* <HomePage /> */}
-        {/* <Footer /> */}
       </Router>
     </>
   );
