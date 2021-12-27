@@ -7,7 +7,7 @@ const RightSidebar = () => {
         className="questions-rightSidebar col-md-3"
         style={{ fontSize: "12px", lineHeight: "10px" }}
       >
-        <div className="card">
+        <div className="card shadow-sm">
           <div
             className="card-header"
             style={{ backgroundColor: "rgb(241, 229, 188)" }}
@@ -50,6 +50,23 @@ const RightSidebar = () => {
               );
             })}
           </div>
+          
+        </div>
+        <div className="card my-3 shadow-sm">
+            <div className="card-header">
+            Collectives
+            </div>
+            <div className="card-body">
+                <div className="d-flex">
+                    <div className="d-flex">
+                        <img src="" alt="" />
+                        <div><h3>Go Language</h3>
+                        <p>16k Members</p></div>
+                    </div>
+                    <button className="btn btn-outline-info btn-sm">Search</button>
+                </div>
+                <p>The official Q&A channel for Google's Go Programming Language.</p>
+            </div>
         </div>
       </div>
     </>
