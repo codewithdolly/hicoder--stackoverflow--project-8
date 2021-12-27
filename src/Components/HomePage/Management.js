@@ -15,7 +15,7 @@ const Management = () => {
                   width: "15rem",
                 }}
               >
-                <img src={process.env.PUBLIC_URL + card.img} width="120px" />
+                <img src={process.env.PUBLIC_URL + card.img} alt="img" width="120px" />
                 <p>{card.text}</p>
               </div>
             );
@@ -26,7 +26,7 @@ const Management = () => {
         {managementTeam.map((card) => {
           return (
             <div className="card mx-3 mb-5 px-4 teams--card">
-              <img src={process.env.PUBLIC_URL + card.img} width="120px" />
+              <img src={process.env.PUBLIC_URL + card.img} alt="img" width="120px" />
               <p>{card.content}</p>
               <hr />
               <div className="teams--deg">
