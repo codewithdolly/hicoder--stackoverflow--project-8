@@ -77,7 +77,7 @@ const RegisterPage = () => {
                 <form>
                   <div className="form-outline mb-4">
                     <label className="form-label" for="form1Example13">
-                      Email address
+                      Full Name
                     </label>
                     <div class="input-group flex-nowrap">
                       <div class="input-group-prepend">
