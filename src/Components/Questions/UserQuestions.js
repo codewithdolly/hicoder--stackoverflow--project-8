@@ -122,7 +122,7 @@ const questions = [
         ans:`Currently, this is my code: private Supplier<BundleEntryResponseComponent> buildSupplier( final RequestDetails requestDetails, final Resource resource ) { return () -> this....`,
         hashtag1:"Java",
         hashtag2:"Java-11",
-        hashtag2:"php",
+        hashtag3:"php",
         time:" 2 min",
         img:"../Images/user2.png",
         user:"Jordi",

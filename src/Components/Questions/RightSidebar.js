@@ -1,4 +1,5 @@
 import React from "react";
+import RelatedTags from "./RelatedTags";
 
 const RightSidebar = () => {
   return (
@@ -35,7 +36,7 @@ const RightSidebar = () => {
             <b>Featured on Meta</b>
           </div>
           <div
-            className="card-body"
+            className="card-body border-bottom"
             style={{ backgroundColor: "rgb(251, 243, 213)" }}
           >
             {meta.map((content) => {
@@ -50,24 +51,38 @@ const RightSidebar = () => {
               );
             })}
           </div>
-          
         </div>
         <div className="card my-3 shadow-sm">
-            <div className="card-header">
-            Collectives
-            </div>
-            <div className="card-body">
-                <div className="d-flex">
-                    <div className="d-flex">
-                        <img src="" alt="" />
-                        <div><h3>Go Language</h3>
-                        <p>16k Members</p></div>
+          <div className="card-header">Collectives</div>
+          {apps.map((app) => {
+            return (
+              <div className="card-body">
+                <div className="d-flex justify-content-between">
+                  <div className="d-flex">
+                    <img
+                      src={process.env.PUBLIC_URL + app.img}
+                      alt="img"
+                      width="35px"
+                      height="30px"
+                      className="mr-2"
+                    />
+                    <div>
+                      <p style={{ fontSize: "18px", fontWeight: "100" }}>
+                        <b>{app.name}</b>
+                      </p>
+                      <p>{app.member}</p>
                     </div>
-                    <button className="btn btn-outline-info btn-sm">Search</button>
+                  </div>
+                  <button className="btn btn-outline-info btn-sm mb-4 ">
+                    Search
+                  </button>
                 </div>
-                <p>The official Q&A channel for Google's Go Programming Language.</p>
-            </div>
+                <p>{app.content}</p>
+              </div>
+            );
+          })}
         </div>
+        <RelatedTags />
       </div>
     </>
   );
@@ -83,4 +98,25 @@ const meta = [
 const blog = [
   `Best practices for writing code comments`,
   ` Sequencing your DNA with a USB dongle and open source code`,
+];
+
+const apps = [
+  {
+    img: `../Images/go.png`,
+    name: "Go Language",
+    member: "16k Members",
+    content: `The official Q&A channel for Google's Go Programming Language.`,
+  },
+  {
+    img: `../Images/cloud.png`,
+    name: "Google Cloud",
+    member: "14k Members",
+    content: `Google Cloud provides organizations with leading infrastructure, platform capabilities`,
+  },
+  {
+    img: `../Images/githubLab.png`,
+    name: "GitLab",
+    member: "6k Members",
+    content: `GitLab is the open DevOps platform, delivered as a single application. Our open source`,
+  },
 ];

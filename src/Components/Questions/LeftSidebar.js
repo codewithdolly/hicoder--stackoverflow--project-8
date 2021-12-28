@@ -4,7 +4,8 @@ import Qimg from "../Images/question.png";
 
 const sideTabs = [
   { name: "Home", icon: <i class="fas fa-home mr-2"></i> },
-  { name: "Public", icon: <i class="fas fa-globe-asia mr-2"></i> },
+  { name: "Public", icon: <i class="fas fa-users mr-2"></i> },
+  { name: "Questions", icon:  <i class="fas fa-globe-asia mr-2"></i> },
   { name: "Tags", icon: <i class="fas fa-hashtag mr-2"></i> },
   { name: "Users", icon: <i class="fas fa-users-cog mr-2"></i> },
   { name: "Collectives", icon: <i class="fas fa-shekel-sign mr-2"></i> },

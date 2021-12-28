@@ -3,6 +3,7 @@ import "./Questions.scss"
 import LeftSidebar from "./LeftSidebar";
 import RightSidebar from "./RightSidebar";
 import UserQuestions from "./UserQuestions";
+import Pagination from "./Pagination";
 
 const Questions = () => {
   return (
@@ -71,6 +72,7 @@ const Questions = () => {
             </div>
             <hr />
             <UserQuestions />
+            <Pagination />
           </div>
           <RightSidebar />
         </div>
