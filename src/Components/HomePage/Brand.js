@@ -34,22 +34,22 @@ const Brand = () => {
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src={brand1} class="d-block w-20" alt="..." />
+              <img src={brand1} class="d-block" alt="..." width="200px" />
             </div>
             <div class="carousel-item">
-              <img src={brand2} class="d-block w-20" alt="..." />
+              <img src={brand2} class="d-block w-10" alt="..." width="200px" />
             </div>
             <div class="carousel-item">
-              <img src={brand3} class="d-block w-20" alt="..." />
+              <img src={brand3} class="d-block w-10" alt="..." width="200px" />
             </div>
             <div class="carousel-item">
-              <img src={brand4} class="d-block w-20" alt="..." />
+              <img src={brand4} class="d-block w-10" alt="..." width="200px" />
             </div>
             <div class="carousel-item">
-              <img src={brand5} class="d-block w-20" alt="..." />
+              <img src={brand5} class="d-block w-10" alt="..." width="200px" />
             </div>
             <div class="carousel-item">
-              <img src={brand6} class="d-block w-20" alt="..." />
+              <img src={brand6} class="d-block w-10" alt="..." width="200px" />
             </div>
           </div>
           <a

@@ -5,7 +5,7 @@ import "./Team.scss";
 const Team = () => {
   return (
     <>
-      <div classNameName="team m-0 p-0" style={{ backgroundColor: "menu" }}>
+      <div classNameName="team m-0 p-5" style={{ backgroundColor: "menu" }}>
         <nav className="navbar navbar-expand-lg navbar-light mx-5 px-5 team--header">
           <button
             className="navbar-toggler"
