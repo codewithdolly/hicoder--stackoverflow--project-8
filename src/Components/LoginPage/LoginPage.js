@@ -9,8 +9,8 @@ const LoginPage = () => {
     <>
       <div className="container loginPage">
         <form className="border px-5 pb-5 m-5 loginPage--form">
-        <div className="loginPage--form--img"><img src={Logo} alt="" width="150px" />
-        <h3 className="center">Login</h3></div>
+        <div className="loginPage--form--img"><img src={Logo} alt="" width="120px" />
+        <h3 className="center mt-2">Login</h3></div>
         
           <div className="form-outline mb-4">
           </div>

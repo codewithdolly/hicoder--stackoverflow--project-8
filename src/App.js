@@ -3,7 +3,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import logo from "./Components/Images/logo1.png";
-import { HomePage, Footer, About, Turms, Products, Questions, RegisterPage, LoginPage } from "./Components";
+import { HomePage, Footer, About, Turms, Products, Questions, RegisterPage, LoginPage, Jobs } from "./Components";
 
 const App = () => {
   return (
@@ -39,6 +39,16 @@ const App = () => {
                   Products
                 </Link>
               </li>
+              <li className="nav-item mr-4">
+                <Link to="/questions" className="nav-link">
+                  Questions
+                </Link>
+              </li>
+              <li className="nav-item mr-4">
+                <Link to="/jobs" className="nav-link">
+                  Jobs
+                </Link>
+              </li>
               <li className="nav-item">
                 <Link to="/turm" className="nav-link">
                   For Turms
@@ -54,35 +64,43 @@ const App = () => {
                 aria-describedby="inputGroup-sizing-sm"
                 placeholder="Search..."
               />
+              <Link to="/login" className="nav-link">
               <button
-                className="btn btn-outline-primary ml-2 my-sm-0 btn-sm px-2"
+                className="btn btn-outline-primary my-sm-0 btn-sm px-3"
                 type="submit"
                 style={{ backgroundColor: "#e3f2fd", color: "gray" }}
               >
                 Log in
               </button>
+                </Link>
+
+              <Link to="/signup" className="nav-link">
               <button
-                className="btn btn-primary mx-2 my-sm-0 btn-sm px-2"
+                className="btn btn-primary my-sm-0 btn-sm px-3"
                 type="submit"
               >
+             
                 Sign Up
               </button>
+                </Link>
+             
             </form>
           </div>
         </nav>
-        {/* <Routes>
+        <Routes>
           <Route index element={<HomePage />} />
           <Route path="about" element={<About />} />
           <Route path="product" element={<Products />} />
           <Route path="turm" element={<Turms />} />
+          <Route path="questions" element={<Questions />} />
+          <Route path="jobs" element={<Jobs />} />
+          <Route path="login" element={ <LoginPage /> } />
+          <Route path="signup" element={<RegisterPage />} />
           <Route path="footer" element={<Footer />}>
           <Route path=":questions" element={<Footer />} />
           </Route>
           <Route path="" element={<p>Please select something</p>} />
-        </Routes> */}
-        {/* <Questions /> */}
-        {/* <RegisterPage /> */}
-        <LoginPage />
+        </Routes>
 
       </Router>
     </>

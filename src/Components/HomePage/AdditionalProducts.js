@@ -55,13 +55,15 @@ const AdditionalProducts = () => {
           <img src={yellow} alt="" width="" className="yellowImg" />
         </div>
       </div>
-      <div className="d-flex justify-content-center align-self-center  my-4">
-        <div><img src={lock} alt="" width="90px" /></div>
+      <hr />
+      <div className="d-flex justify-content-center align-self-center mb-4">
+        <div><img src={lock} alt=""/></div>
         <p className="mr-3 pt-4">Build a <b> private community</b> to share technical or non-technical knowledge.
 
 </p>
 <button className="btn btn-outline" style={{color:"rgb(55, 159, 239)",border: "1px solid rgb(55, 159, 239)"}}><b>Create a free team</b></button>
         </div>
+        <hr />
     </>
   );
 };

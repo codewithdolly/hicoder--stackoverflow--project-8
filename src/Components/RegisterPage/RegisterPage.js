@@ -47,7 +47,7 @@ const RegisterPage = () => {
     <>
       <div classNameName="loginPage">
         <section className="vh-100">
-          <div className="container py-5 h-100">
+          <div className="container py-5">
             <div className="row d-flex align-items-center justify-content-center h-100">
               <div className="col-md-8 col-lg-7 col-xl-6 ml-3">
                 <img src={Logo} alt="" width="350px" />
@@ -148,21 +148,21 @@ const RegisterPage = () => {
 
                   <button
                     type="submit"
-                    className="btn btn-lg btn-block"
+                    className="btn btn-block"
                     style={{ backgroundColor: "rgb(10, 149, 255)" }}
                   >
                     Sign up
                   </button>
                   <button
                     type="submit"
-                    className="btn btn-lg btn-block bg-light border"
+                    className="btn btn-block bg-light border"
                   >
                     <img src={gLogo} alt="" width="20px" className="mr-1" />
                     Google
                   </button>
                   <button
                     type="submit"
-                    className="btn btn-dark btn-lg btn-block"
+                    className="btn btn-dark btn-block"
                   >
                     <i class="fab fa-github mr-1"></i>
                     Github

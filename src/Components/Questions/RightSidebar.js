@@ -1,4 +1,5 @@
 import React from "react";
+import RelatedQuestion from "./RelatedQuestion";
 import RelatedTags from "./RelatedTags";
 
 const RightSidebar = () => {
@@ -83,6 +84,7 @@ const RightSidebar = () => {
           })}
         </div>
         <RelatedTags />
+        <RelatedQuestion />
       </div>
     </>
   );
