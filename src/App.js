@@ -50,8 +50,8 @@ const App = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/turm" className="nav-link">
-                  For Turms
+                <Link to="/team" className="nav-link">
+                  For Teams
                 </Link>
               </li>
             </ul>
@@ -91,7 +91,7 @@ const App = () => {
           <Route index element={<HomePage />} />
           <Route path="about" element={<About />} />
           <Route path="product" element={<Products />} />
-          <Route path="turm" element={<Turms />} />
+          <Route path="team" element={<Turms />} />
           <Route path="questions" element={<Questions />} />
           <Route path="jobs" element={<Jobs />} />
           <Route path="login" element={ <LoginPage /> } />

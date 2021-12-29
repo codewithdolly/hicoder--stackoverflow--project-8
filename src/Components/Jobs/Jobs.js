@@ -4,8 +4,8 @@ import "./Jobs.scss"
 const Jobs = () => {
     return (
         <>
-            <div classNameName='jobs'>
-                <nav className="navbar navbar-expand-lg navbar-light mx-5 my-4 px-5 jobs--header">
+            <div classNameName='jobs m-0 p-0'style={{backgroundColor:"menu"}}>
+                <nav className="navbar navbar-expand-lg navbar-light mx-5 px-5 jobs--header">
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -46,8 +46,9 @@ const Jobs = () => {
         </div>
       </li>
     </ul>
-    <div className="bg-light">
-      <button className="btn btn-outline-info my-sm-0" type="submit">Search</button>
+    <div className="bg-light d-flex learn" style={{backgroundColor:"white"}}>
+    <p>Built for large organizations </p>
+      <button className="btn learnbtn" type="submit">Learn more</button>
     </div>
   </div>
 </nav>
