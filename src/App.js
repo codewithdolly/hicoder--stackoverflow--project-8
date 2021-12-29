@@ -3,7 +3,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import logo from "./Components/Images/logo1.png";
-import { HomePage, Footer, About, Turms, Products, Questions, RegisterPage, LoginPage, Jobs } from "./Components";
+import { HomePage, Footer, About, Team, Products, Questions, RegisterPage, LoginPage, Jobs } from "./Components";
 
 const App = () => {
   return (
@@ -51,7 +51,7 @@ const App = () => {
               </li>
               <li className="nav-item">
                 <Link to="/team" className="nav-link">
-                  For Teams
+                  For Team
                 </Link>
               </li>
             </ul>
@@ -91,7 +91,7 @@ const App = () => {
           <Route index element={<HomePage />} />
           <Route path="about" element={<About />} />
           <Route path="product" element={<Products />} />
-          <Route path="team" element={<Turms />} />
+          <Route path="team" element={<Team />} />
           <Route path="questions" element={<Questions />} />
           <Route path="jobs" element={<Jobs />} />
           <Route path="login" element={ <LoginPage /> } />
