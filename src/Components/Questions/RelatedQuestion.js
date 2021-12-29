@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import user1 from "../Images/user4.png";
-import user2 from "../Images/user6.png";
 
 const questions = [
   {
