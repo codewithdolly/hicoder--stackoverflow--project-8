@@ -1,6 +1,7 @@
 import React from "react";
 import KnowledgeSharing from "./KnowledgeSharing";
 import "./Team.scss";
+import Footer from "../Footer/Footer"
 
 const Team = () => {
   return (
@@ -117,7 +118,7 @@ const Team = () => {
               </p>
               <div>
                 {" "}
-                <button className="btn learnbtn" type="submit">
+                <button className="btn text-dark learnbtn" type="submit">
                   Learn more
                 </button>
               </div>
@@ -126,6 +127,7 @@ const Team = () => {
         </nav>
 <KnowledgeSharing />
       </div>
+      <Footer />
     </>
   );
 };

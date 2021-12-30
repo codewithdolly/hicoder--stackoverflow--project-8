@@ -1,15 +1,20 @@
 import React from "react";
-import "./KnowledgeSharing.scss"
+import "./KnowledgeSharing.scss";
 import knowledgeImg from "../Images/knowledge.png";
 import LinesImg from "../Images/lines.png";
-import Brand from "../HomePage/Brand"
+import Brand from "../HomePage/Brand";
+
 import AboutTeam from "./AboutTeam";
+import Awards from "./Awards";
+import Billing2 from "./Billing2";
+import ToolIntegrates from "../HomePage/ToolIntegrates";
+import SecurityControl from "./SecurityControl";
 
 const KnowledgeSharing = () => {
   return (
     <>
-      <div className="container-fluid knowledgeSharing m-5">
-        <div className="row m-5">
+      <div className="container-fluid knowledgeSharing m-5 mb-0">
+        <div className="row">
           <div className="col-md-5 mr-4">
             <img src={LinesImg} alt="" width="150px" />
             <h1 style={{ fontSize: "40px" }}>
@@ -49,12 +54,15 @@ const KnowledgeSharing = () => {
             <img src={knowledgeImg} alt="" width="600px" className="rounded" />
           </div>
         </div>
-        <div className="branding" >
-        <Brand />
-        <AboutTeam />
+        <div className="branding">
+          <Brand />
         </div>
-        
+        <AboutTeam />
+        <Awards />
+        <Billing2 />
+        <ToolIntegrates />
       </div>
+      <SecurityControl />
     </>
   );
 };
