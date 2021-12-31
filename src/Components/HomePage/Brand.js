@@ -10,6 +10,7 @@ import brand6 from "../Images/brand6.jpg";
 const Brand = () => {
   return (
     <>
+    {/* Brads carousal started*/}
       <div className="brand" align="center">
         <p>
           Thousands of organizations around the globe use Stack Overflow for
@@ -72,6 +73,7 @@ const Brand = () => {
           </a>
         </div>
       </div>
+          {/* Brads carousal ends*/}
     </>
   );
 };

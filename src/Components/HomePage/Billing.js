@@ -4,6 +4,7 @@ import "./Billing.scss";
 const Billing = () => {
   return (
     <>
+      {/*  Annual billing starts */}
       <div className="billing ">
         <div class="custom-control custom-switch m-5" align="left">
           <input
@@ -15,14 +16,11 @@ const Billing = () => {
             Annual billing discount
           </label>
         </div>
+        {/* Annual billing cars started */}
         <div className="d-flex ml-5">
           {cards.map((card) => {
             return (
               <div class="card mx-2" style={{ width: "20rem" }}>
-                {/* <div className="card-header d-flex justify-content-between">
-              {card.header}    
-              {card.headerIcon} 
-              </div> */}
                 <div className="card-body " align="left">
                   {card.btnTop}
                   <h4>{card.money}</h4>
@@ -69,6 +67,9 @@ const Billing = () => {
             );
           })}
         </div>
+        {/* Annual billing cars Ends */}
+
+        {/* investment parts started */}
         <div className="billing--info d-flex text-light">
           <p className="billing--info--content">
             A Forrester Consulting study shows{" "}
@@ -87,13 +88,17 @@ const Billing = () => {
             <button className="btn btn-outline">Calculate your RIO</button>
           </div>
         </div>
+        {/* investment parts Ends */}
       </div>
+      {/*  Annual billing Ends */}
     </>
   );
 };
 
 export default Billing;
 
+
+// cards details in object
 const cards = [
   {
     btnTop: (
