@@ -128,9 +128,9 @@ const Team = () => {
           </div>
         </nav>
         {/* sub-navbar ends */}
+        {/* adding KnowledgeSharing 2nd part */}
+        <KnowledgeSharing />
       </div>
-      {/* adding KnowledgeSharing 2nd part */}
-      <KnowledgeSharing />
 
       {/* adding SecurityControl 3rd part*/}
       <SecurityControl />
