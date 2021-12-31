@@ -15,8 +15,8 @@ const KnowledgeSharing = () => {
     <>
       <div className="container-fluid knowledgeSharing m-5 mb-0">
         <div className="row">
-        {/* Knowledge sharing part started */}
-          <div className="col-md-5 mr-4">
+          {/* Knowledge sharing part started */}
+          <div className="col-md-6">
             <img src={LinesImg} alt="" width="150px" />
             <h1 style={{ fontSize: "40px" }}>
               Knowledge sharing and collaboration without distractions
@@ -51,23 +51,27 @@ const KnowledgeSharing = () => {
               </button>
             </div>
           </div>
-          {/* Knowledge sharing  part end */}
+          {/* Knowledge sharing part end */}
 
           {/* Knowledge sharing  Img added */}
-          <div className="col-md-5 mr-5">
+          <div className="col-md-5 ">
             <img src={knowledgeImg} alt="" width="600px" className="rounded" />
           </div>
-           {/* Knowledge sharing  Img ends */}
+          {/* Knowledge sharing  Img ends */}
         </div>
-        <div className="branding">
-          <Brand />
-        </div>
+        <div className="branding">{/* <Brand /> */}</div>
+        {/* team info */}
         <AboutTeam />
+
+        {/* Awards */}
         <Awards />
+
+        {/* Billing Details  */}
         <Billing2 />
+
+        {/* Tool Integrates */}
         <ToolIntegrates />
       </div>
-      <SecurityControl />
     </>
   );
 };

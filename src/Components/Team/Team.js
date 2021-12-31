@@ -1,12 +1,14 @@
 import React from "react";
 import KnowledgeSharing from "./KnowledgeSharing";
 import "./Team.scss";
-import Footer from "../Footer/Footer"
+import Footer from "../Footer/Footer";
+import SecurityControl from "./SecurityControl";
 
 const Team = () => {
   return (
     <>
       <div classNameName="team m-0 p-5" style={{ backgroundColor: "menu" }}>
+        {/* sub-navbar added */}
         <nav className="navbar navbar-expand-lg navbar-light mx-5 px-5 team--header">
           <button
             className="navbar-toggler"
@@ -125,8 +127,15 @@ const Team = () => {
             </div>
           </div>
         </nav>
-<KnowledgeSharing />
+        {/* sub-navbar ends */}
       </div>
+      {/* adding KnowledgeSharing 2nd part */}
+      <KnowledgeSharing />
+
+      {/* adding SecurityControl 3rd part*/}
+      <SecurityControl />
+
+      {/* adding Footer 4th part */}
       <Footer />
     </>
   );
