@@ -11,7 +11,6 @@ const RightSidebar = () => {
           className="card-header"
           style={{ backgroundColor: "rgb(241, 229, 188)" }}
         >
-          {" "}
           <b>The Overflow Blog</b>
         </div>
         <div

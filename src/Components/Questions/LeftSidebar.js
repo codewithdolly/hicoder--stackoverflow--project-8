@@ -23,6 +23,7 @@ const sideTabs = [
 const LeftSidebar = () => {
   return (
     <>
+    {/* Left sidebar started */}
       {sideTabs.map((tab) => {
         return (
           <button
@@ -36,6 +37,7 @@ const LeftSidebar = () => {
         );
       })}
 
+{/* Collaborate card started */}
       <div className="card text-left m-0 p-0">
         <div className="card-body">
           <p>
@@ -51,6 +53,9 @@ const LeftSidebar = () => {
           </Link>
         </div>
       </div>
+      
+{/* Collaborate card Ends */}
+       {/* Left sidebar Ends */}
     </>
   );
 };
