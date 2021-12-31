@@ -49,6 +49,8 @@ const RegisterPage = () => {
         <section className="vh-100">
           <div className="container py-5">
             <div className="row d-flex align-items-center justify-content-center h-100">
+
+            {/* left Side Stack Overflow community part started*/}
               <div className="col-md-8 col-lg-7 col-xl-6 ml-3">
                 <img src={Logo} alt="" width="350px" />
                 <h3 className="font-weight-normal my-3">
@@ -57,7 +59,7 @@ const RegisterPage = () => {
 
                 {info.map((text) => {
                   return (
-                    <div className="my-2">
+                    <div className="my-3">
                       {text.icon}
                       {text.text}
                     </div>
@@ -73,7 +75,20 @@ const RegisterPage = () => {
                   </small>
                 </div>
               </div>
-              <div className="col-md-7 col-lg-5 col-xl-5 bt-light border p-5">
+                {/* left Side Stack Overflow community part Ends*/}
+
+                {/* Signup form started */}
+              <div className="col-md-7 col-lg-5 col-xl-5 bt-light border p-5 pb-0">
+                <h2
+                  className="text-center"
+                  style={{
+                    color: "rgb(242, 116, 13)",
+                    fontFamily: "serif",
+                  }}
+                >
+                  Sign up
+                </h2>
+                <p className="text-center pb-1">~~~~~~~~~~~</p>
                 <form>
                   <div className="form-outline mb-4">
                     <label className="form-label" for="form1Example13">
@@ -81,7 +96,14 @@ const RegisterPage = () => {
                     </label>
                     <div class="input-group flex-nowrap">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="addon-wrapping">
+                        <span
+                          class="input-group-text"
+                          id="addon-wrapping"
+                          style={{
+                            color: "rgb(242, 116, 13)",
+                            backgroundColor: "rgba(242, 116, 13, 0.308)",
+                          }}
+                        >
                           <i class="fas fa-user"></i>
                         </span>
                       </div>
@@ -100,7 +122,14 @@ const RegisterPage = () => {
                     </label>
                     <div class="input-group flex-nowrap">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="addon-wrapping">
+                        <span
+                          class="input-group-text"
+                          id="addon-wrapping"
+                          style={{
+                            color: "rgb(242, 116, 13)",
+                            backgroundColor: "rgba(242, 116, 13, 0.308)",
+                          }}
+                        >
                           <i class="fas fa-envelope"></i>
                         </span>
                       </div>
@@ -119,7 +148,14 @@ const RegisterPage = () => {
                     </label>
                     <div class="input-group flex-nowrap">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="addon-wrapping">
+                        <span
+                          class="input-group-text"
+                          id="addon-wrapping"
+                          style={{
+                            color: "rgb(242, 116, 13)",
+                            backgroundColor: "rgba(242, 116, 13, 0.308)",
+                          }}
+                        >
                           <i class="fas fa-key"></i>
                         </span>
                       </div>
@@ -148,7 +184,7 @@ const RegisterPage = () => {
 
                   <button
                     type="submit"
-                    className="btn btn-block"
+                    className="btn btn-block text-light"
                     style={{ backgroundColor: "rgb(10, 149, 255)" }}
                   >
                     Sign up
@@ -160,10 +196,7 @@ const RegisterPage = () => {
                     <img src={gLogo} alt="" width="20px" className="mr-1" />
                     Google
                   </button>
-                  <button
-                    type="submit"
-                    className="btn btn-dark btn-block"
-                  >
+                  <button type="submit" className="btn btn-dark btn-block">
                     <i class="fab fa-github mr-1"></i>
                     Github
                   </button>
@@ -177,6 +210,7 @@ const RegisterPage = () => {
                   </button>
                 </form>
               </div>
+                {/* Signup form Ends */}
             </div>
           </div>
         </section>
