@@ -6,6 +6,7 @@ const SecurityControl = () => {
   return (
     <>
       <div className="securityControl bg-light">
+      {/* security controls starts */}
         <div className="text-center pt-5">
           <h2>Robust security controls</h2>
           <p>
@@ -72,6 +73,7 @@ const SecurityControl = () => {
             </div>
           </div>
         </div>
+          {/*security controls ends */}
       </div>
     </>
   );
