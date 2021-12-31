@@ -49,8 +49,7 @@ const RegisterPage = () => {
         <section className="vh-100">
           <div className="container py-5">
             <div className="row d-flex align-items-center justify-content-center h-100">
-
-            {/* left Side Stack Overflow community part started*/}
+              {/* left Side Stack Overflow community part started*/}
               <div className="col-md-8 col-lg-7 col-xl-6 ml-3">
                 <img src={Logo} alt="" width="350px" />
                 <h3 className="font-weight-normal my-3">
@@ -75,9 +74,9 @@ const RegisterPage = () => {
                   </small>
                 </div>
               </div>
-                {/* left Side Stack Overflow community part Ends*/}
+              {/* left Side Stack Overflow community part Ends*/}
 
-                {/* Signup form started */}
+              {/* Signup form started */}
               <div className="col-md-7 col-lg-5 col-xl-5 bt-light border p-5 pb-0">
                 <h2
                   className="text-center"
@@ -210,7 +209,7 @@ const RegisterPage = () => {
                   </button>
                 </form>
               </div>
-                {/* Signup form Ends */}
+              {/* Signup form Ends */}
             </div>
           </div>
         </section>

@@ -14,6 +14,7 @@ const Footer = () => {
                 <img src={logo} alt="" />
               </div>
 
+              {/* STACK OVERFLOW stacks started */}
               {footerContent.map((content) => {
                 return (
                   <>
@@ -23,95 +24,96 @@ const Footer = () => {
                       </h6>
                       <p>
                         <Link to="/jobs" class="text-reset">
-                        {content.con1}
+                          {content.con1}
                         </Link>
                       </p>
                       <p>
                         <Link to="/jobs" class="text-reset">
-                        {content.con2}
+                          {content.con2}
                         </Link>
                       </p>
                       <p>
                         <Link to="/developer" class="text-reset">
-                        {content.con3}
+                          {content.con3}
                         </Link>
                       </p>
                       <p>
                         <Link to="/salary" class="text-reset">
-                        {content.con4}
+                          {content.con4}
                         </Link>
                       </p>
                       <p>
                         <Link to="/salary" class="text-reset">
-                        {content.con5}
+                          {content.con5}
                         </Link>
                       </p>
                       <p>
                         <Link to="/salary" class="text-reset">
-                        {content.con6}
+                          {content.con6}
                         </Link>
                       </p>
                       <p>
                         <Link to="/salary" class="text-reset">
-                        {content.con7}
+                          {content.con7}
                         </Link>
                       </p>
                       <p>
                         <Link to="/salary" class="text-reset">
-                        {content.con8}
+                          {content.con8}
                         </Link>
                       </p>
                       <p>
                         <Link to="/salary" class="text-reset">
-                        {content.con9}
+                          {content.con9}
                         </Link>
                       </p>
                     </div>
                   </>
                 );
               })}
+              {/* STACK OVERFLOW stacks Ends */}
 
+              {/* Social Links started */}
               <div class="col-md-3 col-lg-2 col-xl-2 d-flex m-auto">
                 <p className="mx-4">
                   <Link to="/" class="text-reset">
-                  <i class="fas fa-id-card"></i>Blog
+                    <i class="fas fa-id-card"></i>Blog
                   </Link>
                 </p>
                 <p>
                   <Link to="/" class="text-reset  mx-4">
-                  <i class="fab fa-facebook-square"></i>Facebook
+                    <i class="fab fa-facebook-square"></i>Facebook
                   </Link>
                 </p>
                 <p>
                   <Link to="/" class="text-reset  mx-3">
-                  <i class="fab fa-instagram-square"></i>Instagram
+                    <i class="fab fa-instagram-square"></i>Instagram
                   </Link>
                 </p>
                 <p>
                   <Link to="/" class="text-reset  mx-4">
-                  <i class="fab fa-twitter-square"></i>Twitter
+                    <i class="fab fa-twitter-square"></i>Twitter
                   </Link>
                 </p>
                 <p>
                   <Link to="/" class="text-reset mx-4">
-                  <i class="fab fa-linkedin"></i> LinkedIn
+                    <i class="fab fa-linkedin"></i> LinkedIn
                   </Link>
                 </p>
-               
               </div>
+              {/* Social Links Ends */}
             </div>
           </div>
         </section>
 
+        {/* Copyright Started */}
         <div class="text-right bg-dark mr-5">
           © 2021 Copyright: {""}
-          <Link
-            to="/"
-            class="text-reset fw-bold"
-          >
+          <Link to="/" class="text-reset fw-bold">
             created by Dolly
           </Link>
         </div>
+        {/* Copyright Ends */}
       </footer>
     </>
   );
