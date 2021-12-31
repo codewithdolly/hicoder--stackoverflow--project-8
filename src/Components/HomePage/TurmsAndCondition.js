@@ -13,6 +13,7 @@ import ToolIntegrates from "./ToolIntegrates";
 const TurmsAndCondition = () => {
   return (
     <>
+    {/* Turms And Condition started*/}
       <div className="turms">
         <img
           src={yellow}
@@ -84,12 +85,14 @@ const TurmsAndCondition = () => {
             })}
           </div>
           <img src={Orange} alt="squre" className="float-right mb-5 pb-4"  />
+          
           <Billing />
           <ToolIntegrates />
         </div>
         
       </div>
     </>
+    {/* Turms And Condition ends*/}
   );
 };
 

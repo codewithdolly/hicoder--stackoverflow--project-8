@@ -28,7 +28,7 @@ const PublicPlatform = () => {
         {/* publicPlatform card ends */}
 
         {/* private card started */}
-        <div class="private--private" width="50px">
+        <div class="publicPlatform--private" width="50px">
           <img src={Logo} class="" alt="..." width="250px" />
           <img src={privateImg} class="" alt="..." width="400px" />
           <div class="card-body">

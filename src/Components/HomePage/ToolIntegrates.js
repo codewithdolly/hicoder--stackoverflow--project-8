@@ -13,8 +13,10 @@ import Orange from "../Images/orange.png";
 const ToolIntegrates = () => {
   return (
     <>
+      {/* Integrates tools started */}
       <div className="toolIntegrates">
         <div className="toolIntegrates d-flex justify-content-between my-5 py-5">
+          {/* left img */}
           <div className="d-block">
             <img src={microsoft} alt="microsoft" width="450px" />
             <div className="d-flex justify-content-center">
@@ -25,11 +27,17 @@ const ToolIntegrates = () => {
                 className=""
               />
               <h5 className="text-light ml-1 align-self-center">Microsoft</h5>
-              
             </div>
-            <img src={blue} alt="" className="float-left" style={{marginTop:"10rem"}} />
+            <img
+              src={blue}
+              alt=""
+              className="float-left"
+              style={{ marginTop: "10rem" }}
+            />
           </div>
-          
+          {/* left img ends*/}
+
+          {/* center contaent starts */}
           <div className="text-light mt-5 pt-5 ml-5">
             <h1>Integrates with and improves other tools</h1>
             <h5 style={{ color: "silver", fontFamily: "sans-serif" }}>
@@ -83,6 +91,9 @@ const ToolIntegrates = () => {
             </h5>
           </div>
           <div>
+            {/* center contaent ends */}
+
+            {/* right img stated */}
             <div className="d-block">
               <div className="d-flex">
                 <img
@@ -95,10 +106,12 @@ const ToolIntegrates = () => {
               </div>
               <img src={Slack} alt="Slack" width="450px" />
             </div>
-              <img src={Orange} alt="" className="float-right" width="140px" />
+            <img src={Orange} alt="" className="float-right" width="140px" />
           </div>
+          {/* right img ends */}
         </div>
       </div>
+      {/* Integrates tools ends */}
     </>
   );
 };
