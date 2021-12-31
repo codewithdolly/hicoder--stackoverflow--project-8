@@ -12,22 +12,27 @@ import AdditionalProducts from "./AdditionalProducts";
 import Management from "./Management";
 import { Footer } from "..";
 
-
 const HomePage = () => {
   return (
     <>
       <div className="homePage fixed">
+        {/* mini black box */}
         <div className="homePage--innerDiv bg-dark text-light">
+          {/* left images started */}
           <img src={yellow} alt="squre" className="homePage--innerDiv--sqere" />
           <img
             src={LineImg}
             alt="Line"
             className="homePage--innerDiv--lineimg1"
           />
+
           <div className="homePage--innerDiv--lineimg2">
             <img src={LineImg} alt="line" />
             <img src={blue} alt="squre" />
           </div>
+          {/* left images ends */}
+
+          {/* orange cards started */}
           <div className="homePage--innerDiv--box align-middle">
             <div className="homePage--innerDiv--box--find">
               <img src={search} alt="search" />
@@ -52,6 +57,9 @@ const HomePage = () => {
                 </a>
               </small>
             </div>
+            {/* orange cards ends */}
+
+            {/* Blue cards started */}
             <div className="homePage--innerDiv--box--secure">
               <img src={secure} alt="search" />
               <p>Want a secure, private space for your technical knowledge?</p>
@@ -66,10 +74,16 @@ const HomePage = () => {
               </button>
             </div>
           </div>
+          {/* blue cards ends */}
+
+          {/* data Developer header starts */}
           <h1 className="homePage--innerDiv--header">
             Every has a data <span> Developer</span> tab open to Stack Overflow
           </h1>
+          {/* data Developer header starts */}
           <div class="homePage--innerDiv--plain"></div>
+
+          {/* Stack Overflow reach started */}
           <div className="homePage--innerDiv--reach">
             {details.map((det) => {
               return (
@@ -83,6 +97,7 @@ const HomePage = () => {
               );
             })}
           </div>
+          {/* Stack Overflow reach Ends */}
         </div>
         <PublicPlatform />
         <Brand />
