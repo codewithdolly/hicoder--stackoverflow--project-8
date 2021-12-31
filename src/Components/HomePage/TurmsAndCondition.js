@@ -85,14 +85,13 @@ const TurmsAndCondition = () => {
             })}
           </div>
           <img src={Orange} alt="squre" className="float-right mb-5 pb-4"  />
-          
           <Billing />
           <ToolIntegrates />
         </div>
-        
       </div>
+      {/* Turms And Condition started*/}
     </>
-    {/* Turms And Condition ends*/}
+    
   );
 };
 
