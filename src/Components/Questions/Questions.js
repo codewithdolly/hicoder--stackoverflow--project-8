@@ -1,5 +1,5 @@
 import React from "react";
-import "./Questions.scss"
+import "./Questions.scss";
 import LeftSidebar from "./LeftSidebar";
 import RightSidebar from "./RightSidebar";
 import UserQuestions from "./UserQuestions";
@@ -10,7 +10,13 @@ const Questions = () => {
     <>
       <div className="container-fluid questions">
         <div className="row" style={{ margin: "0 8%" }}>
-          <LeftSidebar />
+          {/* Left Sidebar added */}
+          <div
+            className="questions--LeftSidebar col-md-2 border"
+            style={{ fontSize: "14px", overflowY: "scroll" }}
+          >
+            <LeftSidebar />
+          </div>
           <div
             className="questions--body col-md-7"
             style={{ fontSize: "12px" }}
@@ -71,10 +77,19 @@ const Questions = () => {
               </button>
             </div>
             <hr />
+            {/* Users Questionsadded */}
             <UserQuestions />
+
+            {/* Pagination added */}
             <Pagination />
           </div>
-          <RightSidebar />
+          {/* Right Sidebar added */}
+          <div
+            className="questions-rightSidebar col-md-3"
+            style={{ fontSize: "12px", lineHeight: "10px" }}
+          >
+            <RightSidebar />
+          </div>
         </div>
       </div>
     </>

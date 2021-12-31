@@ -5,10 +5,7 @@ import RelatedTags from "./RelatedTags";
 const RightSidebar = () => {
   return (
     <>
-      <div
-        className="questions-rightSidebar col-md-3"
-        style={{ fontSize: "12px", lineHeight: "10px" }}
-      >
+     
         <div className="card shadow-sm">
           <div
             className="card-header"
@@ -85,7 +82,6 @@ const RightSidebar = () => {
         </div>
         <RelatedTags />
         <RelatedQuestion />
-      </div>
     </>
   );
 };
