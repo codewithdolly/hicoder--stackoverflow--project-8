@@ -5,83 +5,91 @@ import RelatedTags from "./RelatedTags";
 const RightSidebar = () => {
   return (
     <>
-     
-        <div className="card shadow-sm">
-          <div
-            className="card-header"
-            style={{ backgroundColor: "rgb(241, 229, 188)" }}
-          >
-            {" "}
-            <b>The Overflow Blog</b>
-          </div>
-          <div
-            className="card-body"
-            style={{ backgroundColor: "rgb(251, 243, 213)" }}
-          >
-            {blog.map((content) => {
-              return (
-                <div className="d-flex">
-                  <i class="fas fa-pen mr-2"></i>
-                  <p>{content}</p>
-                </div>
-              );
-            })}
-          </div>
-          <div
-            className="card-header"
-            style={{ backgroundColor: "rgb(241, 229, 188)" }}
-          >
-            <b>Featured on Meta</b>
-          </div>
-          <div
-            className="card-body border-bottom"
-            style={{ backgroundColor: "rgb(251, 243, 213)" }}
-          >
-            {meta.map((content) => {
-              return (
-                <div className="d-flex">
-                  <i
-                    class="far fa-comment-alt mr-2"
-                    style={{ color: "rgb(122, 167, 199)" }}
-                  ></i>
-                  <p>{content}</p>
-                </div>
-              );
-            })}
-          </div>
+      {/* Blog card started */}
+      <div className="card shadow-sm">
+        <div
+          className="card-header"
+          style={{ backgroundColor: "rgb(241, 229, 188)" }}
+        >
+          {" "}
+          <b>The Overflow Blog</b>
         </div>
-        <div className="card my-3 shadow-sm">
-          <div className="card-header">Collectives</div>
-          {apps.map((app) => {
+        <div
+          className="card-body"
+          style={{ backgroundColor: "rgb(251, 243, 213)" }}
+        >
+          {blog.map((content) => {
             return (
-              <div className="card-body">
-                <div className="d-flex justify-content-between">
-                  <div className="d-flex">
-                    <img
-                      src={process.env.PUBLIC_URL + app.img}
-                      alt="img"
-                      width="35px"
-                      height="30px"
-                      className="mr-2"
-                    />
-                    <div>
-                      <p style={{ fontSize: "18px", fontWeight: "100" }}>
-                        <b>{app.name}</b>
-                      </p>
-                      <p>{app.member}</p>
-                    </div>
-                  </div>
-                  <button className="btn btn-outline-info btn-sm mb-4 ">
-                    Search
-                  </button>
-                </div>
-                <p>{app.content}</p>
+              <div className="d-flex">
+                <i class="fas fa-pen mr-2"></i>
+                <p>{content}</p>
               </div>
             );
           })}
         </div>
-        <RelatedTags />
-        <RelatedQuestion />
+        <div
+          className="card-header"
+          style={{ backgroundColor: "rgb(241, 229, 188)" }}
+        >
+          <b>Featured on Meta</b>
+        </div>
+        <div
+          className="card-body border-bottom"
+          style={{ backgroundColor: "rgb(251, 243, 213)" }}
+        >
+          {meta.map((content) => {
+            return (
+              <div className="d-flex">
+                <i
+                  class="far fa-comment-alt mr-2"
+                  style={{ color: "rgb(122, 167, 199)" }}
+                ></i>
+                <p>{content}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      {/* Blog card ends */}
+
+      {/* Collectives card started */}
+      <div className="card my-3 shadow-sm">
+        <div className="card-header">Collectives</div>
+        {apps.map((app) => {
+          return (
+            <div className="card-body">
+              <div className="d-flex justify-content-between">
+                <div className="d-flex">
+                  <img
+                    src={process.env.PUBLIC_URL + app.img}
+                    alt="img"
+                    width="35px"
+                    height="30px"
+                    className="mr-2"
+                  />
+                  <div>
+                    <p style={{ fontSize: "18px", fontWeight: "100" }}>
+                      <b>{app.name}</b>
+                    </p>
+                    <p>{app.member}</p>
+                  </div>
+                </div>
+                <button className="btn btn-outline-info btn-sm mb-4 ">
+                  Search
+                </button>
+              </div>
+              <p>{app.content}</p>
+            </div>
+          );
+        })}
+      </div>
+      {/* Collectives card ends */}
+
+      {/* Relative Tags part added */}
+      <RelatedTags />
+
+      {/* Network Questions added */}
+      <RelatedQuestion />
     </>
   );
 };
