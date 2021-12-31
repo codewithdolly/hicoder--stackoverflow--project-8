@@ -83,6 +83,7 @@ const Questions = () => {
             {/* Pagination added */}
             <Pagination />
           </div>
+
           {/* Right Sidebar added */}
           <div
             className="questions-rightSidebar col-md-3"

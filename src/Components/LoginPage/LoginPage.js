@@ -9,18 +9,26 @@ const LoginPage = () => {
     <>
       <div className="container loginPage">
         <form className="border px-5 pb-5 m-5 loginPage--form">
-        <div className="loginPage--form--img"><img src={Logo} alt="" width="120px" />
-        <h3 className="center mt-2">Login</h3></div>
-        
-          <div className="form-outline mb-4">
+          <div className="loginPage--form--img">
+            <img src={Logo} alt="" width="120px" />
+            <h3 className="center mt-2">Login</h3>
           </div>
+
+          {/* Input Box startes */}
           <div className="form-outline mb-4">
             <label className="form-label" for="form1Example23">
               Your Email
             </label>
             <div class="input-group flex-nowrap">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="addon-wrapping" style={{color:"rgb(242, 116, 13)", backgroundColor:"rgba(242, 116, 13, 0.308)"}}>
+                <span
+                  class="input-group-text"
+                  id="addon-wrapping"
+                  style={{
+                    color: "rgb(242, 116, 13)",
+                    backgroundColor: "rgba(242, 116, 13, 0.308)",
+                  }}
+                >
                   <i class="fas fa-envelope"></i>
                 </span>
               </div>
@@ -39,7 +47,14 @@ const LoginPage = () => {
             </label>
             <div class="input-group flex-nowrap">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="addon-wrapping" style={{color:"rgb(242, 116, 13)", backgroundColor:"rgba(242, 116, 13, 0.308)"}}>
+                <span
+                  class="input-group-text"
+                  id="addon-wrapping"
+                  style={{
+                    color: "rgb(242, 116, 13)",
+                    backgroundColor: "rgba(242, 116, 13, 0.308)",
+                  }}
+                >
                   <i class="fas fa-key"></i>
                 </span>
               </div>
@@ -52,23 +67,29 @@ const LoginPage = () => {
               />
             </div>
           </div>
+          {/* Input Box Ends */}
 
-     <div className="d-flex justify-content-between mb-4">
-     <div className="form-check mb-2">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              value=""
-              id="form1Example3"
-            />
-            <label className="form-check-label" for="form1Example3">
-              {" "}
-              Remember me{" "}
-            </label>
+          {/* Remember me startes */}
+          <div className="d-flex justify-content-between mb-4">
+            <div className="form-check mb-2">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                value=""
+                id="form1Example3"
+              />
+              <label className="form-check-label" for="form1Example3">
+                {" "}
+                Remember me{" "}
+              </label>
+            </div>
+            <Link to="/">
+              <small> forgot Password?</small>
+            </Link>
           </div>
-         <Link to="/" ><small> forgot Password?</small></Link>
-     </div>
+          {/* Remember me Ends */}
 
+          {/* Signup Buttons starts */}
           <button
             type="submit"
             className="btn btn-lg btn-block btn-sm text-light"
@@ -91,6 +112,7 @@ const LoginPage = () => {
             <i class="fab fa-facebook-square mr-2"></i>
             Facebook
           </button>
+          {/* Signup Buttons Ends */}
         </form>
       </div>
     </>
