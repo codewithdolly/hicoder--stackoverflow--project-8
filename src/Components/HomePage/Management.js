@@ -4,6 +4,7 @@ import "./Management.scss";
 const Management = () => {
   return (
     <>
+    {/* management cards started */}
       <div className="management">
         <div className="management--miniCard d-flex justify-content-center">
           {miniCard.map((card) => {
@@ -37,12 +38,14 @@ const Management = () => {
           );
         })}
       </div>
+      {/* management cards ends */}
     </>
   );
 };
 
 export default Management;
 
+// Managements details in obj
 const miniCard = [
   {
     img: "../Images/key.png",

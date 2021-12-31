@@ -9,6 +9,8 @@ const PublicPlatform = () => {
   return (
     <>
       <div className="publicPlatform">
+
+      {/* publicPlatform card started */}
         <div class="publicPlatform--public" width="50px">
           <img src={Logo} class="" alt="..." width="250px" />
           <img src={publicImg} class="" alt="..." width="400px" />
@@ -23,7 +25,10 @@ const PublicPlatform = () => {
         <div className="text-secondary">or <a href="#">search content</a></div>
           </div>
         </div>
-        <div class="publicPlatform--private" width="50px">
+        {/* publicPlatform card ends */}
+
+        {/* private card started */}
+        <div class="private--private" width="50px">
           <img src={Logo} class="" alt="..." width="250px" />
           <img src={privateImg} class="" alt="..." width="400px" />
           <div class="card-body">
@@ -42,6 +47,7 @@ const PublicPlatform = () => {
           </div>
         </div>
       </div>
+      {/* private card ends */}
     </>
   );
 };
