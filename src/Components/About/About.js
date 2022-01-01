@@ -1,17 +1,18 @@
 import React from "react";
 import "./About.scss";
 import { Link } from "react-router-dom";
+import EmpoweringWorld from "./EmpoweringWorld";
 
 const About = () => {
   return (
     <>
       <div className="about">
       {/* Mini navbar startes */}
-        <div className="d-flex justify-content-between mx-5 py-3">
+        <div className="d-flex justify-content-between mx-5 py-4">
           <div>
             <ul class="nav">
               <li class="nav-item ">
-                <Link to="/" class="nav-link btn active about-miniNav px-3">
+                <Link to="/" class="nav-link btn active about-miniNav miniNav1 px-3">
                   About
                 </Link>
               </li>
@@ -56,6 +57,9 @@ const About = () => {
           </div>
         </div>
          {/* Mini navbar Ends */}
+        
+        <EmpoweringWorld />
+
       </div>
     </>
   );
