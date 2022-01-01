@@ -1,6 +1,20 @@
-.aboutTeam{
-    background-color: rgba(255, 255, 255, 0.664);
-    margin: 5rem;
-    margin-left: 0;
-    padding: 2rem;
+
+@import "../styles/colors";
+
+.job-miniNav{
+    border-radius: 50px;
+    color: white;
+    Link{
+        text-decoration: none;
+    }
+}
+.job-miniNav:hover{
+    background-color: silver; 
+    color: white;
+
+}
+
+.miniNav1{
+    background-color: rgba(255, 94, 0, 0.726) !important;
+    color: white !important;
 }

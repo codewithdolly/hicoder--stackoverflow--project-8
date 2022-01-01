@@ -3,6 +3,8 @@ import KnowledgeSharing from "./KnowledgeSharing";
 import "./Team.scss";
 import Footer from "../Footer/Footer";
 import SecurityControl from "./SecurityControl";
+import { Link } from "react-router-dom";
+
 
 const Team = () => {
   return (
@@ -25,14 +27,14 @@ const Team = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                 <Link to= "/" className="nav-link team-miniNav miniNav1"  >
                   Overview <span className="sr-only">(current)</span>
-                </a>
+                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
+                 <Link to= "/"
+                  className="nav-link dropdown-toggle team-miniNav"
+                   
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
@@ -40,42 +42,42 @@ const Team = () => {
                   aria-expanded="false"
                 >
                   Why Stack Overflow
-                </a>
+                 </Link>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="#">
+                   <Link to= "/" className="dropdown-item"  >
                     Take a tour
-                  </a>
-                  <a className="dropdown-item" href="#">
+                   </Link>
+                   <Link to= "/" className="dropdown-item"  >
                     Articls
-                  </a>
-                  <a className="dropdown-item" href="#">
+                   </Link>
+                   <Link to= "/" className="dropdown-item"  >
                     Content Health{" "}
                     <button className="btn btn-sm ml-4 learnbtn" type="submit">
                       <small>new</small>
                     </button>
-                  </a>
+                   </Link>
 
-                  <a className="dropdown-item" href="#">
+                   <Link to= "/" className="dropdown-item"  >
                     Integrations
-                  </a>
-                  <a className="dropdown-item" href="#">
+                   </Link>
+                   <Link to= "/" className="dropdown-item"  >
                     Security
-                  </a>
+                   </Link>
                   <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="#">
+                   <Link to= "/" className="dropdown-item"  >
                     Customer Access
-                  </a>
+                   </Link>
                 </div>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                 <Link to= "/" className="nav-link team-miniNav"  >
                   Pricing <span className="sr-only">(current)</span>
-                </a>
+                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
+                 <Link to= "/"
+                  className="nav-link dropdown-toggle team-miniNav"
+                   
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
@@ -83,31 +85,31 @@ const Team = () => {
                   aria-expanded="false"
                 >
                   Resources
-                </a>
+                 </Link>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="#">
+                   <Link to= "/" className="dropdown-item"  >
                     Case Studies
-                  </a>
-                  <a className="dropdown-item" href="#">
+                   </Link>
+                   <Link to= "/" className="dropdown-item"  >
                     Use Cases
-                  </a>
-                  <a className="dropdown-item" href="#">
+                   </Link>
+                   <Link to= "/" className="dropdown-item"  >
                     Help Cewneter
-                  </a>
+                   </Link>
                   <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="#">
+                   <Link to= "/" className="dropdown-item"  >
                     Calculaters
-                  </a>
-                  <a className="dropdown-item" href="#">
+                   </Link>
+                   <Link to= "/" className="dropdown-item"  >
                     Reduce Support Ticket
-                  </a>
+                   </Link>
                   <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="#">
+                   <Link to= "/" className="dropdown-item"  >
                     Resoure center
-                  </a>
-                  <a className="dropdown-item" href="#">
+                   </Link>
+                   <Link to= "/" className="dropdown-item"  >
                     Videos and more
-                  </a>
+                   </Link>
                 </div>
               </li>
             </ul>
