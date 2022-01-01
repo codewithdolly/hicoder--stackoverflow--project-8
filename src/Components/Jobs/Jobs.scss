@@ -18,3 +18,15 @@
     background-color: rgba(255, 94, 0, 0.726) !important;
     color: white !important;
 }
+
+.input{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.icon{
+    position: relative;
+    left: 2rem;
+}
