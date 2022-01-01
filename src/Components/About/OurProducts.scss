@@ -1,0 +1,28 @@
+.public--card{
+    background-color: rgb(240, 248, 255) !important;
+}
+.public--card:hover{
+background-color: rgb(205, 233, 254) !important;
+;
+cursor: pointer;
+}
+
+
+
+.public--card2{
+    background-color: rgb(240, 248, 255) !important;
+    width: 47%;
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    padding-right: 0;
+    margin-bottom: 1rem;
+    p{
+        font-size: 18px;
+    }
+}
+
+.public--card2:hover{
+    background-color: rgb(205, 233, 254) !important;
+    ;
+    cursor: pointer;
+    }

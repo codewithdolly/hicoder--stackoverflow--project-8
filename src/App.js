@@ -34,8 +34,8 @@ const App = () => {
                   About <span className="sr-only">(current)</span>
                 </Link>
               </li>
-              <li to="/product" className="nav-item mr-4">
-                <Link to="/product" className="nav-link">
+              <li lassName="nav-item mr-4">
+                <Link to="/" className="nav-link">
                   Products
                 </Link>
               </li>
@@ -90,7 +90,7 @@ const App = () => {
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="about" element={<About />} />
-          <Route path="product" element={<Products />} />
+          <Route path="" element={<Products />} />
           <Route path="team" element={<Team />} />
           <Route path="questions" element={<Questions />} />
           <Route path="jobs" element={<Jobs />} />

@@ -3,6 +3,8 @@ import "./About.scss";
 import { Link } from "react-router-dom";
 import EmpoweringWorld from "./EmpoweringWorld";
 import FundAndCollaboration from "./FundAndCollaboration";
+import OurProducts from "./OurProducts";
+import Footer from "../Footer"
 
 const About = () => {
   return (
@@ -65,7 +67,11 @@ const About = () => {
         {/* adding FundAnd Collaboration page */}
         <FundAndCollaboration />
 
+        {/* Products page adding */}
+        <OurProducts />
+
       </div>
+      <Footer />
     </>
   );
 };
