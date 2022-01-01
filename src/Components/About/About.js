@@ -2,6 +2,7 @@ import React from "react";
 import "./About.scss";
 import { Link } from "react-router-dom";
 import EmpoweringWorld from "./EmpoweringWorld";
+import FundAndCollaboration from "./FundAndCollaboration";
 
 const About = () => {
   return (
@@ -58,7 +59,11 @@ const About = () => {
         </div>
          {/* Mini navbar Ends */}
         
+        {/* adding Empowering World page */}
         <EmpoweringWorld />
+
+        {/* adding FundAnd Collaboration page */}
+        <FundAndCollaboration />
 
       </div>
     </>
