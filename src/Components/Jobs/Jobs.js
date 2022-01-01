@@ -3,6 +3,7 @@ import "./Jobs.scss";
 import { Link } from "react-router-dom";
 import LeftSidebar from "../Questions/LeftSidebar";
 import "./Jobs.scss";
+import JobRoles from "./JobRoles";
 
 const Jobs = () => {
   return (
@@ -154,6 +155,7 @@ const Jobs = () => {
                 </div>
               </div>
             </div>
+            <JobRoles />
           </div>
         </div>
       </div>
