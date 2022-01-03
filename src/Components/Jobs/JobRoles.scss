@@ -16,3 +16,18 @@
     margin: 2px;
     padding: 0 2px;
   }
+
+.jobBTN{
+    color: black;
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 3px 5px;
+    &:hover{
+        background-color: silver;
+    }
+
+}
+
+.btn1{
+    background-color: rgba(192, 192, 192, 0.438);
+}
