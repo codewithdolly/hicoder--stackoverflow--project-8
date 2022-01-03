@@ -31,29 +31,28 @@ const Jobs = () => {
               <li class="nav-item">
                 <Link
                   to="/"
-                  to="/"
                   class="nav-link text-secondary active job-miniNav miniNav1"
                 >
                   Jobs
                 </Link>
               </li>
               <li class="nav-item ">
-                <Link to="/" to="/" class="nav-link text-secondary job-miniNav">
+                <Link to="/"  class="nav-link text-secondary job-miniNav">
                   Companies
                 </Link>
               </li>
               <li class="nav-item">
-                <Link to="/" to="/" class="nav-link text-secondary job-miniNav">
+                <Link to="/"  class="nav-link text-secondary job-miniNav">
                   Why Jobs?
                 </Link>
               </li>
               <li class="nav-item">
-                <Link to="/" to="/" class="nav-link text-secondary job-miniNav">
+                <Link to="/"  class="nav-link text-secondary job-miniNav">
                   Applications
                 </Link>
               </li>
               <li class="nav-item">
-                <Link to="/" to="/" class="nav-link text-secondary job-miniNav">
+                <Link to="/"  class="nav-link text-secondary job-miniNav">
                   Developer Story
                 </Link>
               </li>

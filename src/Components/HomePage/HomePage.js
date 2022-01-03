@@ -10,7 +10,8 @@ import Brand from "./Brand";
 import TurmsAndCondition from "./TurmsAndCondition";
 import AdditionalProducts from "./AdditionalProducts";
 import Management from "./Management";
-import { Footer } from "..";
+import Footer from "../Footer/Footer"
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -48,13 +49,13 @@ const HomePage = () => {
               </button>
               <br />
               <small style={{ color: "gray" }}>
-                or{" "}
-                <a
+                or
+                <Link to="/"
                   style={{ color: "black", textDecoration: "underline" }}
-                  href="#"
+               
                 >
                   search content
-                </a>
+                </Link>
               </small>
             </div>
             {/* orange cards ends */}

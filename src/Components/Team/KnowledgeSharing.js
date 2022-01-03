@@ -2,13 +2,10 @@ import React from "react";
 import "./KnowledgeSharing.scss";
 import knowledgeImg from "../Images/knowledge.png";
 import LinesImg from "../Images/lines.png";
-import Brand from "../HomePage/Brand";
-
 import AboutTeam from "./AboutTeam";
 import Awards from "./Awards";
 import Billing2 from "./Billing2";
 import ToolIntegrates from "../HomePage/ToolIntegrates";
-import SecurityControl from "./SecurityControl";
 
 const KnowledgeSharing = () => {
   return (

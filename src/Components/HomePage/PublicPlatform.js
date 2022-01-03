@@ -3,7 +3,7 @@ import "./PublicPlatform.scss"
 import Logo from "../Images/logo1.png";
 import publicImg from "../Images/public.png"
 import privateImg from "../Images/private.png"
-
+import { Link } from "react-router-dom";
 
 const PublicPlatform = () => {
   return (
@@ -22,7 +22,7 @@ const PublicPlatform = () => {
             <button href="#" class="btn btn-warning publicPlatform--public--btn mt-4 mb-3">
               Join the community
             </button>
-        <div className="text-secondary">or <a href="#">search content</a></div>
+        <div className="text-secondary">or <Link to="/" >search content</Link></div>
           </div>
         </div>
         {/* publicPlatform card ends */}
