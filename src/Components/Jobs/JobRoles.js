@@ -59,6 +59,8 @@ const JobRoles = () => {
 
 export default JobRoles;
 
+
+// jobs details in obj
 let jobs = [
   {
     name: "React Developer (Remote) & JavaScript Developer ",
