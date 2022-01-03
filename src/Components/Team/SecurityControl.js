@@ -1,6 +1,5 @@
 import React from "react";
 import "./SecurityControl.scss";
-import lock2 from "../Images/lock2.png";
 
 const SecurityControl = () => {
   return (
