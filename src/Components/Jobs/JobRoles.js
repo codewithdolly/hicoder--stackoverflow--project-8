@@ -13,12 +13,12 @@ const JobRoles = () => {
             return (
               <>
                 <div className="d-flex border-bottom my-2">
-                  <div className="" style={{ width: "40%" }}>
+                  <div>
                     <img
                       src={process.env.PUBLIC_URL + job.img}
                       alt=""
                       width="60px"
-                      className="rounded"
+                      className="rounded mr-2"
                     />
                   </div>
                   <div>
@@ -49,10 +49,8 @@ const JobRoles = () => {
         </div>
        {/* Jobs details ends */}
 
-        {/* Right Side started --right */}
-        <div className="ml-5">
-         <SingleJob />
-        </div>
+        {/* Right Side adding --right */}
+        <SingleJob />
       </div>
     </>
   );
