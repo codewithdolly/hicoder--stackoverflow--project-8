@@ -8,7 +8,7 @@ const JobRoles = () => {
     <>
       <div className="jobRoles d-flex border">
         {/* Jobs details started --left */}
-        <div className=" border-right p-2 jobRoles--jobs" style={{width:"30%"}}>
+        <div className=" border-right p-2 jobRoles--jobs" style={{width:"45%"}}>
           {jobs.map((job) => {
             return (
               <>
