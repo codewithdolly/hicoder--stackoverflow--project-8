@@ -1,7 +1,7 @@
 import "./App.scss";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter as Router,Routes, Route, Link} from "react-router-dom";
 import logo from "./Components/Images/logo1.png";
 import { HomePage, Footer, About, Team, Products, Questions, RegisterPage, LoginPage, Jobs } from "./Components";
 

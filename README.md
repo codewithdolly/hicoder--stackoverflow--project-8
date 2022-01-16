@@ -1,3 +1,14 @@
+# Used components and frameworks
+1. React
+2. Scss
+3. Bootstrap
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

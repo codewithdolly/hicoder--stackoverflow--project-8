@@ -112,6 +112,7 @@ const RegisterPage = () => {
                         placeholder="Username"
                         aria-label="Username"
                         aria-describedby="addon-wrapping"
+                      
                       />
                     </div>
                   </div>
